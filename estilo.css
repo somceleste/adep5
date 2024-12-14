@@ -1,0 +1,311 @@
+
+
+body {
+    background-color: black;
+    color: white;
+}
+/* elementos em comum*/
+h2, h3 {
+    text-align: center;
+    color: #25d366;
+}
+a {
+    text-decoration: none;
+    color: orange;
+}
+ul {
+    list-style: none;
+}
+/* agrupamentos */ 
+.sobre, .missao, .agenda, .integrantes {
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px 2px blue;
+}
+.primeira-parte, .agenda, .integrantes, .galeria, .onde-estamos {
+    width: 60%;
+}
+/* cabecalho*/
+.cabecalho {
+    width: 100%;
+    background-color: rgb(2, 2, 54);
+    border-radius: 10px;
+    box-shadow: 0 0.5px 2px 0px gray;
+    height: 80px;
+   display: flex;
+   justify-content: space-around;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+.cabecalho img {
+    height: 95%;
+    width: 85px;
+    padding-top: 5px;
+}
+.cabecalho a {
+    padding-top: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+/* botao whatsapp*/
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000; 
+}
+.fa-whatsapp {
+    margin-top: 16px;
+}   
+
+/* primeira parte */
+.primeira-parte {
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+.sobre, .missao {
+    width: 150px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 330px;
+}
+.primeira-parte p {
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+
+/* agenda*/
+.agenda {
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 90px;
+    border-radius: 20px;
+}
+.agenda-display {
+    display: flex;
+    justify-content: center;
+}
+.agenda .dezembro, .agenda .janeiro {
+    line-height: 42px;
+    font-size: 18px;
+}
+.agenda h2 {
+    padding-top: 20px;
+}
+   
+/* integrantes */
+.integrantes {
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 90px;
+    border-radius: 10px;
+  }
+.lista-integrantes {
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.integrantes h2 {
+    margin-top: 55px;
+}
+.integrantes a {
+    color: white;
+}
+
+/* fotos */
+.galeria {
+    margin-top: 200px;
+    margin: 0 auto;
+}
+.galeria .imagens{
+    overflow-x: scroll;
+    display: flex;
+    margin-top: 30px;
+}
+.galeria img{
+    width: 250px;
+    height: 190px;
+    padding-right: 5px;
+}
+.galeria h2 {
+    margin-top: 80px;
+}
+.galeria .imagem-em-pe {
+    width: 350px;
+}
+
+/* localizacao */
+.onde-estamos {
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
+.onde-estamos h2 {
+    margin-bottom: 35px;
+}
+.onde-estamos iframe {
+    width: 55%;
+    height: 300px;
+}
+
+/* contato */
+.contato-geral {
+width: 60%;
+height: 170px;
+margin: 0 auto;
+}
+.contato-geral img {
+    width: 40px;
+    height: 40px;
+}
+.contato-alinhamento {
+    display: flex;
+    justify-content:  center;
+}
+.whatsapp, .instagram {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.contato-geral h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+.contato-geral a {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* roda pe */
+footer {
+    margin-top: 26px;
+    width: 100%;
+    height: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px; 
+    background-color: gray;
+    text-align: center;
+    color: black;
+}
+footer a {
+    color: black;
+}
+footer img {
+    width: 30px;
+    height: 25px;
+    margin-top: 7px;
+}
+
+/* resposividade celular */
+@media screen and (max-width:700px) {
+/* cabecalho */
+.cabecalho a {
+    display: none;
+}
+.cabecalho img {
+    height: 100%;
+}
+h2 { 
+    font-size: 28px;
+    text-align: center;
+}
+/* agrupamento */
+.primeira-parte, .agenda, .integrantes, .contato-geral {
+    width: 80%;
+}    
+/* primeira parte */
+.primeira-parte {
+    height:850px;
+    display: block;
+} 
+.primeira-parte p {
+    line-height: 37px;
+}
+.sobre, .missao {
+    margin: 0 auto;
+    font-size: 20px;
+    height: 380px;
+    width: 250px;
+    text-align: center;
+    margin-top: 24px;
+}
+.sobre p, .missao p {
+    font-size: 23px;
+}
+.sobre p {
+    line-height: 47px;
+}
+/* agenda */
+.agenda {
+    margin-top: 100px;
+   height: 650px;
+   text-align: center;
+}
+.agenda-display {
+    display: block;
+}
+.agenda h3 {
+    font-size: 21px;
+    text-align: center;
+}
+.agenda li { 
+    line-height: 40px;
+    font-size: 18px;
+    margin-right: 30px;
+}
+/* integrantes */
+.integrantes {
+    height: 560px;
+}
+.integrantes h2 {
+    padding-top: 20px;
+}
+.integrantes a {
+    font-size: 22px;
+    line-height: 50px;
+}
+.integrantes .lista-integrantes {
+    line-height: 35px;
+    margin-right: 30px;
+}
+/* galeria */
+.galeria {
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 300px;
+    width: 80%;
+}
+.galeria h2 {
+    margin-bottom: 50px;
+}
+/* localizacao */    
+.onde-estamos h2 {
+    margin-bottom: 45px;
+}
+.onde-estamos iframe {
+    width: 225px;
+    height: 180px;
+}
+.btn-whatsapp {
+    right: 0;
+    bottom: 5px;
+} 
+
+}
+
+
